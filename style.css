@@ -1,0 +1,476 @@
+/*** Add your styles here **/
+/*Fonts*/
+@font-face {
+  font-family: avenir-medium;
+  src: url(assets/fonts/AvenirNextLTPro-MediumCnIt.woff.woff);
+}
+@font-face {
+  font-family: avenir-bold;
+  src: url(assets/fonts/AvenirNextLTPro-Bold.woff);
+}
+@font-face {
+  font-family: avenir-regular;
+  src: url(assets/fonts/AvenirNextLTPro-Regular.woff);
+}
+/*General*/
+body{
+	margin: 0 auto;
+	background: #EFEFF2;
+  	font-family: avenir-medium;
+  	font-family: avenir-bold;
+    font-family: avenir-regular;
+}
+body,html {
+  height: 100%;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover, a:focus, a:active{
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+button:active, button:focus{
+	border: none;
+	outline: none;
+}
+img{
+	max-width: 100%;
+}
+
+/*Top header*/
+.header-name-lower {
+  width: 205px;
+  height: 27px;
+  font-family: AvenirNext;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.main-content {
+  width: 1020px;
+  margin: auto;
+}
+.header-top {
+	background: #0D0000;
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #979797;
+}
+.header-top-right {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+header p {
+  margin-bottom: 0;
+}
+
+/*Search*/
+.search-wrapper {
+  background: #640000;
+  position: relative;
+  width: 250px;
+}
+.search {
+  width: 85%;
+  background: 0 0;
+}
+.search input {
+  background: #FFF;
+  width: 100%;
+  font-size: 14px;
+  color: #bbb;
+  padding: 2px 15px;
+  border: none;
+  border: 1px solid#640000;
+}
+.search-wrapper::after {
+	content: url(assets/images/search.png);
+	position: absolute;
+	right: -22px;
+	top: 2px;
+	width: 50px;
+	z-index: 9999;
+	height: 50px;
+}
+.main-header {
+	width: 90%;
+	margin: auto;
+	background: rgba(255,255,255,.8);
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo-content h1 {
+	font-family: avenir-bold;
+	font-size: 46px;
+	margin-bottom: 0;
+}
+.logo-content p {
+	font-family: avenir-bold;
+	font-size: 20px;
+}
+.main-menu-wrapper {
+	width: 68%;
+}
+.collapse-nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.collapse-nav ul li {
+	display: inline-block;
+}
+.collapse-nav ul li a {
+	/* color: ; */
+	color: #000033;
+	font-size: 17px;
+	font-weight: bold;
+}
+.collapse-nav ul li.join-btn a:hover {
+	background: #FFF;
+	color: #003 !important;
+}
+header {
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+.header-bottom {
+	width: 90%;
+	margin: auto;
+	background-color: rgba(0, 0, 51, 0.3);
+	border: 1px solid #979797;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+	.header-bottom li a {
+		color: #FFF;
+	}
+.owl-nav {
+	position: absolute;
+	right: 50px;
+	top: 0;
+}
+.owl-nav button {
+	color: #FFF !important;
+	background: #4A0505 !important;
+	font-size: 70px !important;
+	font-family: initial !important;
+	display: inline-block !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+	width: 50px;
+	text-align: center;
+	height: 55px;
+	/* line-height: ; */
+	padding: 0;
+	margin: 0 5px;
+	border: 1px solid;
+}
+.owl-nav button.owl-prev span {
+	position: absolute;
+	top: -33px;
+	left: 16px;
+}
+.owl-nav button.owl-next span {
+	position: absolute;
+	top: -33px;
+	right: 16px;
+}
+
+.banner-wrapper {
+	height: 720px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+}
+.banner-carousel-wrapper {
+	position: absolute;
+	bottom: 50px;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	left: 5%;
+}
+.banner-carousel {
+	width: 100%;
+}
+.single-carousel-item {
+	border: 1px solid #979797;
+	width: 80%;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 56px;
+	line-height: 56px;
+}
+.single-carousel-item p {
+	margin-bottom: 0;
+	color: #4a4a4a;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 20px;
+}
+.single-carousel-item p a {
+	color: inherit;
+	font-style: italic;
+	display: inline-block;
+	margin-left: 60px;
+	text-decoration: underline;
+}
+
+.request-now-btn {
+	text-align: center;
+}
+.request-now-btn a {
+	color: inherit;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#merun {
+	border: 2px solid #4a0505;
+	background-color: rgba(74, 5, 5, 0.3);
+	color: #4a0505;
+}
+#merun a{
+	color: #4a0505;
+}
+#purpale{
+	border: 2px solid #000033;
+	background-color: rgba(0, 0, 51, 0.3);
+	color: #000033;
+}
+#purpale a{
+	color: #000033;
+}
+
+.single-enquery-box h2 {
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.single-enquery-box p {
+	font-size: 14px;
+	text-align: center;
+}
+.single-enquery-box ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.single-enquery-box ul li {
+	list-style: inherit;
+	width: 48%;
+}
+.enquery-link {
+	text-align: center;
+	font-family: avenir-bold;
+	font-size: 18px;
+	font-style: italic;
+	text-decoration: underline;
+}
+.single-enquery-box {
+	padding: 10px 0;
+	margin-bottom: 15px;
+}
+
+.page-locator {
+	margin: 20px 0;
+}
+
+.page-locator p {
+  margin-bottom: 0;
+  color: #4a4a4a;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/*Activities*/
+.single-activities {
+	width: 245px;
+	border: 2px solid #000033;
+}
+.activities {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.activities-content h2 {
+	text-align: center;
+	color: #000033;
+	font-family: avenir-bold;
+	font-size: 20px;
+	margin: 20px 0 15px 0;
+}
+.activities-content p {
+	color: #4a4a4a;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.activity-wrapper {
+	padding-bottom: 50px;
+}
+
+/*Join*/
+.join-banner {
+	width: 100%;
+	background: #003;
+	height: 160px;
+	border: 1px solid #979797;
+}
+.join-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 150px;
+}
+.join-links-wrapper {
+  width: 27%;
+  background: #FFF;
+  border: 1px solid #979797;
+  padding-top: 25px;
+}
+	.join-links-wrapper h1 {
+		text-align: center;
+		color: #4a4a4a;
+		font-size: 20px;
+		font-family: avenir-bold;
+	}
+.join-blog {
+  width: 72%;
+  border: 1px solid #979797;
+  background: #FFF;
+  padding: 25px 10px 50px 40px;
+}
+.join-links {
+  padding-left: 90px;
+}
+.join-links ul li a {
+  color: #000033;
+  font-size: 16px;
+  font-weight: bold;
+}
+.join-btn a {
+	background: #003;
+	color: #FFF !important;
+/* 	width: ; */
+	padding: 5px 25px;
+	box-shadow: 0 2px 4px #4a4a4a;
+	transition: .5s;
+	/*border: 1px solid #9b9b9b;*/
+}
+
+/*Members*/
+.members-banner {
+	width: 100%;
+	background: #003;
+	height: 160px;
+	border: 1px solid #979797;
+}
+.members-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 150px;
+}
+.members-links-wrapper {
+  width: 27%;
+  background: #FFF;
+  border: 1px solid #979797;
+  padding-top: 25px;
+}
+	.members-links-wrapper h1 {
+		text-align: center;
+		color: #4a4a4a;
+		font-size: 20px;
+		font-family: avenir-bold;
+	}
+.members-links {
+	padding-left: 90px;
+}
+	.members-links ul li a {
+		color: #000033;
+		font-size: 16px;
+		font-weight: bold;
+	}
+.members-blog {
+  width: 72%;
+  border: 1px solid #979797;
+  background: #FFF;
+  padding: 25px 10px 50px 40px;
+}
+.members-Section {
+  width: 690px;
+  height: 41px;
+  font-family: AvenirNext;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+
+/*Blog*/
+.blog-title {
+  text-align: center;
+}
+.blog-title h1 {
+  color: #4a4a4a;
+  font-size: 30px;
+  font-family: avenir-bold;
+}
+.blog-with-image {
+	display: flex;
+	justify-content: space-between;
+}
+.blog-image-content {
+	width: 60%;
+	padding-right: 10px;
+}
+.blog-image {
+	width: 45%;
+}
+.blog-content p {
+	font-size: 14px;
+	color: #4a4a4a;
+}
+.blog-image span {
+	display: block;
+	color: #4a4a4a;
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
+	margin-top: 3px;
+}
+
+.links-indent
+{
+	margin-left:20px;
+}
