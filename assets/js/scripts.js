@@ -1,5 +1,20 @@
 // Add Your Scripts here
+$(document).ready(function(){
+    var Attribs = getAttribs();
+    getFields();
+    function getFields(){
 
+    }
+    function getAttribs(div){
+        var attribs = {};
+        attribs.$div = div;
+        return attribs;
+    }
+    function display(){
+        var a = 2
+        return a;
+    }
+});
 // OWL-CAROUSEL
 $('.banner-carousel').owlCarousel({
     loop: true,

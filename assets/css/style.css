@@ -2,15 +2,15 @@
 /*Fonts*/
 @font-face {
   font-family: avenir-medium;
-  src: url(assets/fonts/AvenirNextLTPro-MediumCnIt.woff.woff);
+  src: url(fonts/AvenirNextLTPro-MediumCnIt.woff.woff);
 }
 @font-face {
   font-family: avenir-bold;
-  src: url(assets/fonts/AvenirNextLTPro-Bold.woff);
+  src: url(fonts/AvenirNextLTPro-Bold.woff);
 }
 @font-face {
   font-family: avenir-regular;
-  src: url(assets/fonts/AvenirNextLTPro-Regular.woff);
+  src: url(fonts/AvenirNextLTPro-Regular.woff);
 }
 /*General*/
 body{
